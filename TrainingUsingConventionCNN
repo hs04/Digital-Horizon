@@ -134,7 +134,7 @@ te_lbl = np.array([i[1] for i in testing_img])
 model1 = Sequential()
 
 model1.add((InputLayer(input_shape = [64,64,3])))
-model1.add(Conv2D(filters = 16,kernel_size = 5,padding='same',activation = 'relu'))
+model1.add(Conv2D(filters = 16,kernel_size = 3,padding='same',activation = 'relu'))
 model1.add(MaxPool2D(pool_size=2,padding='same'))
 
 model1.add(Conv2D(filters = 32,kernel_size = 3,padding='same',activation = 'relu'))
